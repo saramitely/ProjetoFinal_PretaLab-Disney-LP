@@ -26,6 +26,10 @@ let media = (nota1 + nota2 + nota3 + nota4) / 4;
 
 if (media === 0) {
   mensagem = "Infelizmente você zerou a prova :(";
+} else if (media < 0) {
+  mensagem = "Por favor, insira um número válido."
+} else if (media > 10) {
+  mensagem = "Por favor, insira um número válido."
 } else if (media >= 0.1 && media <= 3) {
   mensagem = "Caramba, deu ruim, você obteve media " + media + "! Estude mais e tente novamente!";
 } else if (media >= 3.1 && media <= 5.9) {
